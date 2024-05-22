@@ -15,37 +15,24 @@
     <link rel="manifest" href="site.webmanifest" />
     <title>Cookie Clicker</title>
   </head>
+  <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
-    <!-- Note the addition for the selection component -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
+          <main class="mdl-layout__content">
           <span class="mdl-layout-title">Cookie Clicker</span>
         </div>
       </header>
-    <main class="mdl-layout__content">
-      <div class="right-image">
-        <img src="./images/cookie.jpg" alt="cookie image">
-      </div>
-      <br />
-      <div class="page-content">Click the cookie:</div>
-      <form action="#">
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="times" />
-          <label class="mdl-textfield__label" for="different-price">Times clicked</label>
-          <span class="mdl-textfield__error">Input is not a number.</span>
-        </div>
-        </form>
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()">
-        </button>
-        </form>
-        <br />
-        <br />
-        <div class="page-content-answer">
-          <div id="answer"></div>
+      <!-- Image -->
+      <p></p>
+        <img src="./images/cookie.jpg" alt="cookie image" width="auto" height="auto" id="Cookie"
+        onclick="cookies()" />
+      <p></p>
+      <!-- basic text -->
+          <div id="text">
+          <div id="total"></div>
         </div>
       </main>
     </div>

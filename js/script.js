@@ -6,7 +6,7 @@
 
 "use strict"
 /**
-* Check servie worker.
+* Check service worker.
 */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICD2OR-Unit6-02-HTML/sw.js", {
@@ -24,4 +24,3 @@ function cookies() {
   document.getElementById("total").innerHTML =
     "The time that you click is " + localStorage.hits + "!"
 }
-
